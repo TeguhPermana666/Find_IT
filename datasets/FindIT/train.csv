@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Data Analytics Competition FIND IT 2022 | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="Membuat prediksi gaji berdasarkan lowongan pekerjaan" />
+  <meta name="turbolinks-cache-control" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="bzaUDR4VYRhmeQ4082h9eQ==" type="text/javascript">
+    window["pageRequestStartTime"] = 1650338659557;
+    window["pageRequestEndTime"] = 1650338659590;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+  <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="bzaUDR4VYRhmeQ4082h9eQ==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+    <link rel="stylesheet" type="text/css" href="/static/assets/vendor.css?v=1f6d99669e949b7dfa2b" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=f602e7231c8f2e08f52b" />
+  
+    
+ 
+      <script nonce="bzaUDR4VYRhmeQ4082h9eQ==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="bzaUDR4VYRhmeQ4082h9eQ==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-12629138-1', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Competitions'
+        });
+    </script>
+    <script nonce="bzaUDR4VYRhmeQ4082h9eQ==" async src="https://www.googletagmanager.com/gtag/js?id=UA-12629138-1"></script>
+
+  
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggle" />
+    <meta name="og:url" content="https://kaggle.com/competitions/findit2022" />
+    <meta name="og:title" content="Data Analytics Competition FIND IT 2022" />
+    <meta name="og:description" content="Membuat prediksi gaji berdasarkan lowongan pekerjaan" />
+    <meta name="og:image" content="https://storage.googleapis.com/kaggle-competitions/kaggle/36147/logos/thumb76_76.png?t=2022-04-18-03-30-57" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+
+  
+    
+
+  
+    
+    
+<script nonce="bzaUDR4VYRhmeQ4082h9eQ==" type="text/javascript">
+    var Kaggle = window.Kaggle || {};
+
+    Kaggle.Current = {
+        antiForgeryToken: 'CfDJ8GDhb0sRQ19Fpvg6UQb84XHqvjJQutwTTn94GZi95PYnlfba0Qdvy21CxvsCTQrf-zSxMh_S0tFUrFmzTQdIthli3tW7Mou6uVCmMAnx2jJDMQ',
+        isAnonymous: true,
+        analyticsToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NTAzMzk1NTksIlVzZXJJZCI6MH0.2OriXIlJbAM5WdVkjHDRvD4vAViPSJAOPug-ddvvPxg',
+        analyticsTokenExpiry: 15,
+        
+        
+        
+        
+        
+        
+        
+        enableRapidash: true, 
+        
+    }
+        Kaggle.Current.log = function(){};
+        Kaggle.Current.warn = function(){};
+
+    var decodeUserDisplayName = function () {
+        var escapedUserDisplayName = Kaggle.Current.userDisplayNameEscaped || "";
+        try {
+            var textVersion = new DOMParser().parseFromString(escapedUserDisplayName, "text/html").documentElement.textContent;
+            if (textVersion) {
+                return textVersion;
+            }
+        } catch(ex) {}
+        return escapedUserDisplayName;
+    }
+    Kaggle.Current.userDisplayName = decodeUserDisplayName();
+</script>
+
+    
+
+<script nonce="bzaUDR4VYRhmeQ4082h9eQ==" type="text/javascript">
+    var Kaggle = window.Kaggle || {};
+    Kaggle.PageMessages = [];
+</script>
+
+
+
+    <script nonce="bzaUDR4VYRhmeQ4082h9eQ==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="bzaUDR4VYRhmeQ4082h9eQ==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="bzaUDR4VYRhmeQ4082h9eQ==" src="/static/assets/runtime.js?v=b6e0d0386c003b23f65a" data-turbolinks-track="reload"></script>
+  <script nonce="bzaUDR4VYRhmeQ4082h9eQ==" src="/static/assets/vendor.js?v=a2004e5f19533473e100" data-turbolinks-track="reload"></script>
+  <script nonce="bzaUDR4VYRhmeQ4082h9eQ==" src="/static/assets/app.js?v=cf39be383fa99254ef11" data-turbolinks-track="reload"></script>
+    <script nonce="bzaUDR4VYRhmeQ4082h9eQ==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+
+<body data-turbolinks="false">
+  <main>
+    
+
+
+
+
+
+
+<div id="site-container"></div>
+<div data-component-name="NavigationContainer" style="display: flex; flex-direction: column; flex: 1 0 auto;"></div><script class="kaggle-component" nonce="bzaUDR4VYRhmeQ4082h9eQ==">var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"navigationType":"BOTH_NAV"});performance && performance.mark && performance.mark("NavigationContainer.componentCouldBootstrap");</script>
+<div id="site-body" class="hide">
+    
+
+
+<div data-component-name="CompetitionContainer" style="display: flex; flex-direction: column; flex: 1 0 auto;"></div><script class="kaggle-component" nonce="bzaUDR4VYRhmeQ4082h9eQ==">var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"competitionId":36147,"competitionType":"COMPETITION_TYPE_PREDICTION","competitionTitle":"Data Analytics Competition FIND IT 2022","briefDescription":"Membuat prediksi gaji berdasarkan lowongan pekerjaan","competitionHeaderImageUrl":"https://storage.googleapis.com/kaggle-competitions/kaggle/36147/logos/header.png?t=2022-04-18-03-30-22","organizationId":0,"dateEnabled":"2022-04-18T03:42:41.553Z","deadline":"2022-04-29T16:59:00Z","mergerDeadline":"2022-04-29T16:59:00Z","rewardQuantity":0,"isInClass":true,"hostSegment":"HOST_SEGMENT_IN_CLASS","rules":{"id":160464,"postId":11530503,"content":"### **Satu Peserta Satu Akun**\n\nPeserta tidak diperbolehkan mendaftar lebih dari satu akun.\n\n\n\n### **Nama Team**\n\nNama team disesuaikan dengan nama team yang sudah didaftarkan pada website find-it.id.\n\n\n\n### **Team Merger**\n\nKetua team mengundang anggotanya yang lain untuk bergabung pada team yang sudah dibentuk melalui tab Merge Team.\n\n\n### **Team Limits**\nSetiap tim beranggotakan maksimal 3 orang.\n\n\n### **Submission Limits**\n\nSetiap tim dapat mengirimkan 2 submisi/hari.\n\nSetiap tim diperbolehkan memilih 2 final submission untuk penilaian.\n\n\n\n### **Competition Deadline**\n\nStart Date: 19 April 2022\n\nEntry Deadline: 20 April 2022, 23:59 WIB\n\nMerger Deadline: 20 April 2022, 23:59 WIB\n\nEnd Date (Final Submission Deadline): 29 April 2022, 23:59 WIB","mimeType":"text/markdown","name":"rules"},"dataIntro":{"id":160461,"postId":11530500,"content":"1. File train.csv berisi data yang dapat digunakan peserta untuk melatih model Machine Learning dengan delimiter berupa pipe \u201C|\u201D.\n2. File predict-case.csv berisi data yang dapat digunakan peserta untuk menguji model yang dibuat dengan delimiter berupa pipe \u201C|\u201D. \n3. File sample_submission.csv adalah contoh bentuk submisi yang benar.","mimeType":"text/markdown","name":"data-description"},"competitionSlug":"findit2022","numPrizes":1,"leaderboardPercentage":100,"hasLimitedParticipation":true,"discussion":{"dataUrl":"/forums/2117013/topics.json","id":2117013,"subscription":"UNSUBSCRIBE","paramValues":{"page":1,"group":"TOPIC_LIST_GROUP_ALL","sortBy":"TOPIC_LIST_SORT_BY_HOT","category":"TOPIC_LIST_CATEGORY_ALL"}},"competitionThumbnailImageUrl":"https://storage.googleapis.com/kaggle-competitions/kaggle/36147/logos/thumb76_76.png?t=2022-04-18-03-30-57","newTopic":{"authorType":"TOPIC","forumId":2117013,"parentName":"Data Analytics Competition FIND IT 2022","parentUrl":"/competitions/findit2022/discussion"},"numScoredSubmissions":2,"maxDailySubmissions":2,"maxDailySubmissionsResetDate":"2022-04-20T00:00:00Z","totalSolutionRows":3000,"maxTeamSize":3,"totalCompetitors":0,"evaluationAlgorithm":{"id":2,"abbreviation":"RMSE","name":"Root Mean Squared Error","description":"Square root of the average of the squared errors.","isPublic":true,"requiresSameRowCountInSubmissionAndSolution":true,"solutionSchema":"\u003CdataFrameSchema\u003E\u003CcolumnDefinitions\u003E\u003CcolumnDefinition name=\u0022Id\u0022 isRequired=\u0022true\u0022 isKey=\u0022true\u0022 requiredDataType=\u0022System.Reflection.Missing\u0022 /\u003E\u003CcolumnDefinition name=\u0022Expected\u0022 allowMultipleColumns=\u0022true\u0022 isRequired=\u0022true\u0022 requiredDataType=\u0022System.Double\u0022 /\u003E\u003C/columnDefinitions\u003E\u003C/dataFrameSchema\u003E","submissionSchema":"\u003CdataFrameSchema\u003E\u003CcolumnDefinitions\u003E\u003CcolumnDefinition name=\u0022Id\u0022 isRequired=\u0022true\u0022 isKey=\u0022true\u0022 requiredDataType=\u0022System.Reflection.Missing\u0022 /\u003E\u003CcolumnDefinition name=\u0022Predicted\u0022 allowMultipleColumns=\u0022true\u0022 isRequired=\u0022true\u0022 requiredDataType=\u0022System.Double\u0022 /\u003E\u003C/columnDefinitions\u003E\u003C/dataFrameSchema\u003E","parametersSchema":"\u003CparametersSchema type=\u0022Kaggle.Metrics.EmptyEvaluationAlgorithmParameters\u0022 /\u003E","dateModified":"2022-04-18T21:09:02.139485300Z","environmentRenderType":"ENVIRONMENT_RENDER_TYPE_JSON"},"pages":[{"id":160462,"postId":11550894,"content":"Buatlah model untuk memprediksi salary  berdasarkan data-data lowongan pekerjaan yang sudah tersedia pada file train.csv. Skor akhir berdasarkan metrik evaluasi RMSE. Untuk contoh submisi dapat dilihat di file sample_submission.csv.\n\nPenjelasan kolom:\n1. job_title = nama pekerjaan\n2. location = lokasi perusahaan tempat bekerja\n3. salary_currency = mata uang dari salary\n4. career_level = tingkat jabatan dari pekerjaan yang ditawarkan\n5. experience_level = lama pengalaman pelamar yang diminta perusahaan\n6. education_level = syarat tingkat pendidikan bagi pelamar pekerjaan\n7. employment_type = tipe kontrak\n8. job_function = kategorisasi jenis pekerjaan\n9. job_benefits = manfaat yang bisa diberikan perusahaan\n10. company_process_time = rata-rata lama waktu perusahaan untuk merespon pelamar\n11. company_size = jumlah karyawan yang bekerja di perusahaan tersebut\n12. company_industry = jenis industri yang menjadi lini bisnis perusahaan\n13. job_description = deskripsi pekerjaan yang ditawarkan\n14. salary = jumlah gaji yang ditawarkan setiap bulan","mimeType":"text/markdown","name":"description","isPublished":true},{"id":160463,"postId":11530812,"content":"- **19 April 2022** - Entry Deadline. Peserta harus menerima peraturan kompetisi untuk dapat bersaing.\n- **19 April 2022** - Merger Team Deadline.\n- **29 April 2022** - Final Submission Deadline.\n\nSemua tenggat waktu adalah pukul 23.59 WIB pada hari yang telah ditentukan. Panitia berhak memperbarui timeline kompetisi jika dianggap perlu.","mimeType":"text/html","name":"Timeline","isPublished":true}],"databundleVersionId":3537122,"hasLeaderboard":true,"publicLeaderboardMessage":"","privateLeaderboardMessage":"","hasKernels":true,"hasSolutionFile":true,"rawDataUrl":"/c/36147/publicleaderboarddata.zip","mySubmissionsCount":0,"hostSegmentTitle":"InClass","competitionHasLaunched":true,"externalCompetitionThumbnailImageUrl":"https://storage.googleapis.com/kaggle-competitions/kaggle/36147/logos/thumb76_76.png?t=2022-04-18-03-30-57","competitionUrl":"/competitions/findit2022","categories":{"tags":[{"name":"rmse","description":"Square root of the average of the squared errors."}],"type":"TAG_TYPE_COMPETITION"},"competitionHostClaims":{},"requiresSameRowCountInSubmissionAndSolution":true,"rulesRequired":true,"modelFileSizeBytes":0,"privateLeaderboardReleaseDate":"2022-05-05T17:00:00Z","@wf": "Competitions.Legacy.CompetitionDtoWireFormat3"});performance && performance.mark && performance.mark("CompetitionContainer.componentCouldBootstrap");</script>
+
+</div>
+
+
+
+
+  </main>
+</body>
+
+</html>
