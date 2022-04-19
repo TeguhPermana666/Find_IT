@@ -31,3 +31,7 @@ job_description = deskripsi pekerjaan yang ditawarkan
 
 salary = jumlah gaji yang ditawarkan setiap bulan
 
+
+
+# RMSE
+Hands of ML halaman 40
